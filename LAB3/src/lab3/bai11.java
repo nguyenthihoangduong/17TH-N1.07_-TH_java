@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lab3;
 
-/**
- *
- * @author Admin
- */
+
 import java.awt.*;  
 import java.awt.event.*;  
 /*********************************************/  
@@ -245,7 +238,7 @@ class MyMemoryButton extends Button implements ActionListener
 {  
 bai11 cl;  
   
-/////////////////////////////////  
+
 MyMemoryButton(int x,int y, int width,int height,String cap, bai11 clc)  
 {  
 super(cap);  
@@ -254,7 +247,7 @@ this.cl=clc;
 this.cl.add(this);  
 addActionListener(this);  
 }  
-////////////////////////////////////////////////  
+
 public void actionPerformed(ActionEvent ev)  
 {  
 char memop=((MyMemoryButton)ev.getSource()).getLabel().charAt(1);  
@@ -277,9 +270,9 @@ case '+':
     else   
         cl.memLabel.setText("M");     
     break;  
-}//switch  
-}//actionPerformed  
-}//class  
+}
+}
+}
   
 /*****************************************/  
   
@@ -326,5 +319,5 @@ cl.memLabel.setText(" ");
   
 //it must be CE button pressed  
 cl.displayLabel.setText("0");cl.setClear=true;  
-}//actionPerformed  
-}//class  
+}
+}
